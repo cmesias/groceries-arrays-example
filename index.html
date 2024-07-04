@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array Example</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Groceries Array by Carl Mesias</h1>
+        <p>Press F12 to take a look at the console.</p>
+
+        <div class="container">
+            <div>
+                <h2>script.js</h2>
+                <div class="code">
+                    <p>// Welcome message</p>
+                    <p>console.log('Grocery List by Carl Mesias');</p><br>
+                    
+                    <p>// Create array for a greocery list</p>
+                    <p>const groceries = ["Milk", "Eggs", "Rice", "Bread", "Chicken"];</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Remove index 2 only</p>
+                    <p>groceries.splice(2, 1);</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Remove "Bread", and insert "Biscuits" at the same index</p>
+                    <p>let indexOfBread = groceries.indexOf("Bread");              // get index of "Bread"</p>
+                    <p>groceries.splice(indexOfBread, 1, "Biscuits");              // remove "Bread" by index and insert "Biscuits"</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Insert "Butter" and "Flour" to beginning of array</p>
+                    <p>groceries.unshift("Butter", "Flour");</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Remove the first element</p>
+                    <p>groceries.shift();</p><br>
+
+                    <p>// Print array
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Remove the last element</p>
+                    <p>groceries.pop();</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Add "Bananas" to the end of the array</p>
+                    <p>groceries.push("Bananas");</p><br>
+
+                    <p>// Print array</p>
+                    <p>console.log(groceries);</p><br>
+
+                    <p>// Print out from "Eggs" to the end of the array into the console</p>
+                    <p>let indexOfEggs = groceries.indexOf("Eggs");                // get index of "Eggs"</p>
+                    <p>console.log(groceries.slice(indexOfEggs));                  // use slice to get a shallow copy of a portion of the array from "Rice" to the end of the array</p><br>            
+
+                    <p>// Print the whole array</p>
+                    <p>console.log(groceries);</p><br>
+                </div>
+            </div>
+            <div>
+                <h2>Output</h2>
+                <div class="img-item">
+                    <img src="console_output.png">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

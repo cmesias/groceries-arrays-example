@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.code {
+    font-size: 0.8rem;
+    background-color: rgb(109, 222, 147);
+    padding: 16px;
+}
+
+h1, h1 + p {
+    text-align: center;
+}
